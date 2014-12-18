@@ -21,9 +21,8 @@
 
     [self.window setBackgroundColor:[UIColor whiteColor]];
     
-    _baseView = [[ViewController alloc] init];
+    _baseView = [[FactsViewController alloc] init];
     
-    _baseView.view.frame = self.window.frame;
     
     self.window.rootViewController = _baseView;
     [self.window makeKeyAndVisible];

@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
+#import "FactsViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) ViewController *baseView;
+@property (strong, nonatomic) FactsViewController *baseView;
 
 
 @end
