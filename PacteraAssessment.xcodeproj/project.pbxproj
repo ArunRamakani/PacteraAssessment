@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC640CFA1A430F0F00E4241A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640CF91A430F0F00E4241A /* main.m */; };
+		DC640CFD1A430F0F00E4241A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640CFC1A430F0F00E4241A /* AppDelegate.m */; };
+		DC640D001A430F0F00E4241A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640CFF1A430F0F00E4241A /* ViewController.m */; };
+		DC640D141A430F0F00E4241A /* PacteraAssessmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640D131A430F0F00E4241A /* PacteraAssessmentTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC640D0E1A430F0F00E4241A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC640CEC1A430F0F00E4241A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC640CF31A430F0F00E4241A;
+			remoteInfo = PacteraAssessment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC640CF41A430F0F00E4241A /* PacteraAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PacteraAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC640CF81A430F0F00E4241A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC640CF91A430F0F00E4241A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC640CFB1A430F0F00E4241A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC640CFC1A430F0F00E4241A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC640CFE1A430F0F00E4241A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DC640CFF1A430F0F00E4241A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DC640D0D1A430F0F00E4241A /* PacteraAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PacteraAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC640D121A430F0F00E4241A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC640D131A430F0F00E4241A /* PacteraAssessmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacteraAssessmentTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC640CF11A430F0F00E4241A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC640D0A1A430F0F00E4241A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC640CEB1A430F0F00E4241A = {
+			isa = PBXGroup;
+			children = (
+				DC640CF61A430F0F00E4241A /* PacteraAssessment */,
+				DC640D101A430F0F00E4241A /* PacteraAssessmentTests */,
+				DC640CF51A430F0F00E4241A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC640CF51A430F0F00E4241A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC640CF41A430F0F00E4241A /* PacteraAssessment.app */,
+				DC640D0D1A430F0F00E4241A /* PacteraAssessmentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC640CF61A430F0F00E4241A /* PacteraAssessment */ = {
+			isa = PBXGroup;
+			children = (
+				DC640CFB1A430F0F00E4241A /* AppDelegate.h */,
+				DC640CFC1A430F0F00E4241A /* AppDelegate.m */,
+				DC640CFE1A430F0F00E4241A /* ViewController.h */,
+				DC640CFF1A430F0F00E4241A /* ViewController.m */,
+				DC640CF71A430F0F00E4241A /* Supporting Files */,
+			);
+			path = PacteraAssessment;
+			sourceTree = "<group>";
+		};
+		DC640CF71A430F0F00E4241A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC640CF81A430F0F00E4241A /* Info.plist */,
+				DC640CF91A430F0F00E4241A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC640D101A430F0F00E4241A /* PacteraAssessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC640D131A430F0F00E4241A /* PacteraAssessmentTests.m */,
+				DC640D111A430F0F00E4241A /* Supporting Files */,
+			);
+			path = PacteraAssessmentTests;
+			sourceTree = "<group>";
+		};
+		DC640D111A430F0F00E4241A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC640D121A430F0F00E4241A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC640CF31A430F0F00E4241A /* PacteraAssessment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC640D171A430F0F00E4241A /* Build configuration list for PBXNativeTarget "PacteraAssessment" */;
+			buildPhases = (
+				DC640CF01A430F0F00E4241A /* Sources */,
+				DC640CF11A430F0F00E4241A /* Frameworks */,
+				DC640CF21A430F0F00E4241A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacteraAssessment;
+			productName = PacteraAssessment;
+			productReference = DC640CF41A430F0F00E4241A /* PacteraAssessment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC640D0C1A430F0F00E4241A /* PacteraAssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC640D1A1A430F0F00E4241A /* Build configuration list for PBXNativeTarget "PacteraAssessmentTests" */;
+			buildPhases = (
+				DC640D091A430F0F00E4241A /* Sources */,
+				DC640D0A1A430F0F00E4241A /* Frameworks */,
+				DC640D0B1A430F0F00E4241A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC640D0F1A430F0F00E4241A /* PBXTargetDependency */,
+			);
+			name = PacteraAssessmentTests;
+			productName = PacteraAssessmentTests;
+			productReference = DC640D0D1A430F0F00E4241A /* PacteraAssessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC640CEC1A430F0F00E4241A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Pactera;
+				TargetAttributes = {
+					DC640CF31A430F0F00E4241A = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					DC640D0C1A430F0F00E4241A = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = DC640CF31A430F0F00E4241A;
+					};
+				};
+			};
+			buildConfigurationList = DC640CEF1A430F0F00E4241A /* Build configuration list for PBXProject "PacteraAssessment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC640CEB1A430F0F00E4241A;
+			productRefGroup = DC640CF51A430F0F00E4241A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC640CF31A430F0F00E4241A /* PacteraAssessment */,
+				DC640D0C1A430F0F00E4241A /* PacteraAssessmentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC640CF21A430F0F00E4241A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC640D0B1A430F0F00E4241A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC640CF01A430F0F00E4241A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC640D001A430F0F00E4241A /* ViewController.m in Sources */,
+				DC640CFD1A430F0F00E4241A /* AppDelegate.m in Sources */,
+				DC640CFA1A430F0F00E4241A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC640D091A430F0F00E4241A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC640D141A430F0F00E4241A /* PacteraAssessmentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC640D0F1A430F0F00E4241A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC640CF31A430F0F00E4241A /* PacteraAssessment */;
+			targetProxy = DC640D0E1A430F0F00E4241A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DC640D151A430F0F00E4241A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DC640D161A430F0F00E4241A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC640D181A430F0F00E4241A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PacteraAssessment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC640D191A430F0F00E4241A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PacteraAssessment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DC640D1B1A430F0F00E4241A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PacteraAssessmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PacteraAssessment.app/PacteraAssessment";
+			};
+			name = Debug;
+		};
+		DC640D1C1A430F0F00E4241A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PacteraAssessmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PacteraAssessment.app/PacteraAssessment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC640CEF1A430F0F00E4241A /* Build configuration list for PBXProject "PacteraAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC640D151A430F0F00E4241A /* Debug */,
+				DC640D161A430F0F00E4241A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC640D171A430F0F00E4241A /* Build configuration list for PBXNativeTarget "PacteraAssessment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC640D181A430F0F00E4241A /* Debug */,
+				DC640D191A430F0F00E4241A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC640D1A1A430F0F00E4241A /* Build configuration list for PBXNativeTarget "PacteraAssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC640D1B1A430F0F00E4241A /* Debug */,
+				DC640D1C1A430F0F00E4241A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC640CEC1A430F0F00E4241A /* Project object */;
+}
