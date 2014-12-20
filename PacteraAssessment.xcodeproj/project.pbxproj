@@ -20,6 +20,12 @@
 		DC640D811A43185900E4241A /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640D2A1A43185900E4241A /* CJSONDeserializer.m */; };
 		DC640D821A43185900E4241A /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640D2C1A43185900E4241A /* CJSONSerializer.m */; };
 		DC640D831A43185900E4241A /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640D2F1A43185900E4241A /* NSDictionary_JSONExtensions.m */; };
+		DC640DD01A43198B00E4241A /* Facts.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC640DCF1A43198B00E4241A /* Facts.txt */; };
+		DC640DD31A435B4400E4241A /* Facts.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640DD21A435B4400E4241A /* Facts.m */; };
+		DC640DD61A43E74B00E4241A /* FactsDisplayCellCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640DD51A43E74B00E4241A /* FactsDisplayCellCell.m */; };
+		DC640DD91A446E6500E4241A /* default-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DC640DD81A446E6500E4241A /* default-placeholder.png */; };
+		DC640DDB1A446F6000E4241A /* latest.png in Resources */ = {isa = PBXBuildFile; fileRef = DC640DDA1A446F6000E4241A /* latest.png */; };
+		DC640DDD1A4470C900E4241A /* atdJL.png in Resources */ = {isa = PBXBuildFile; fileRef = DC640DDC1A4470C900E4241A /* atdJL.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,14 @@
 		DC640D2D1A43185900E4241A /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
 		DC640D2E1A43185900E4241A /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
 		DC640D2F1A43185900E4241A /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
+		DC640DCF1A43198B00E4241A /* Facts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Facts.txt; sourceTree = "<group>"; };
+		DC640DD11A435B4400E4241A /* Facts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facts.h; sourceTree = "<group>"; };
+		DC640DD21A435B4400E4241A /* Facts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Facts.m; sourceTree = "<group>"; };
+		DC640DD41A43E74B00E4241A /* FactsDisplayCellCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactsDisplayCellCell.h; sourceTree = "<group>"; };
+		DC640DD51A43E74B00E4241A /* FactsDisplayCellCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactsDisplayCellCell.m; sourceTree = "<group>"; };
+		DC640DD81A446E6500E4241A /* default-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-placeholder.png"; sourceTree = "<group>"; };
+		DC640DDA1A446F6000E4241A /* latest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = latest.png; sourceTree = "<group>"; };
+		DC640DDC1A4470C900E4241A /* atdJL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = atdJL.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,14 +112,19 @@
 		DC640CF61A430F0F00E4241A /* PacteraAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				DC640DD71A446E6500E4241A /* image */,
 				DC640D211A43185900E4241A /* Lib */,
 				DC640CFB1A430F0F00E4241A /* AppDelegate.h */,
 				DC640CFC1A430F0F00E4241A /* AppDelegate.m */,
 				DC640CFE1A430F0F00E4241A /* FactsViewController.h */,
 				DC640CFF1A430F0F00E4241A /* FactsViewController.m */,
-				DC640CF71A430F0F00E4241A /* Supporting Files */,
 				DC640D1D1A4317BE00E4241A /* FactsDataManager.h */,
 				DC640D1E1A4317BE00E4241A /* FactsDataManager.m */,
+				DC640CF71A430F0F00E4241A /* Supporting Files */,
+				DC640DD11A435B4400E4241A /* Facts.h */,
+				DC640DD21A435B4400E4241A /* Facts.m */,
+				DC640DD41A43E74B00E4241A /* FactsDisplayCellCell.h */,
+				DC640DD51A43E74B00E4241A /* FactsDisplayCellCell.m */,
 			);
 			path = PacteraAssessment;
 			sourceTree = "<group>";
@@ -113,6 +132,7 @@
 		DC640CF71A430F0F00E4241A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC640DCF1A43198B00E4241A /* Facts.txt */,
 				DC640CF81A430F0F00E4241A /* Info.plist */,
 				DC640CF91A430F0F00E4241A /* main.m */,
 			);
@@ -169,6 +189,16 @@
 				DC640D2F1A43185900E4241A /* NSDictionary_JSONExtensions.m */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		DC640DD71A446E6500E4241A /* image */ = {
+			isa = PBXGroup;
+			children = (
+				DC640DDC1A4470C900E4241A /* atdJL.png */,
+				DC640DDA1A446F6000E4241A /* latest.png */,
+				DC640DD81A446E6500E4241A /* default-placeholder.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,10 +281,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC640DD01A43198B00E4241A /* Facts.txt in Resources */,
 				DC640D7D1A43185900E4241A /* .travis.yml in Resources */,
 				DC640D7E1A43185900E4241A /* Config.xcconfig in Resources */,
+				DC640DDD1A4470C900E4241A /* atdJL.png in Resources */,
+				DC640DD91A446E6500E4241A /* default-placeholder.png in Resources */,
 				DC640D7F1A43185900E4241A /* LICENSE in Resources */,
 				DC640D7C1A43185900E4241A /* .gitignore in Resources */,
+				DC640DDB1A446F6000E4241A /* latest.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +310,10 @@
 				DC640D811A43185900E4241A /* CJSONDeserializer.m in Sources */,
 				DC640D001A430F0F00E4241A /* FactsViewController.m in Sources */,
 				DC640D801A43185900E4241A /* README.markdown in Sources */,
+				DC640DD61A43E74B00E4241A /* FactsDisplayCellCell.m in Sources */,
 				DC640CFD1A430F0F00E4241A /* AppDelegate.m in Sources */,
 				DC640CFA1A430F0F00E4241A /* main.m in Sources */,
+				DC640DD31A435B4400E4241A /* Facts.m in Sources */,
 				DC640D821A43185900E4241A /* CJSONSerializer.m in Sources */,
 				DC640D1F1A4317BE00E4241A /* FactsDataManager.m in Sources */,
 			);
@@ -383,8 +419,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PacteraAssessment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -393,8 +431,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PacteraAssessment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

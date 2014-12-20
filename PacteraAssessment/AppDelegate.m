@@ -23,8 +23,8 @@
     
     _baseView = [[FactsViewController alloc] init];
     
-    
-    self.window.rootViewController = _baseView;
+    UINavigationController *baseNav = [[UINavigationController alloc] initWithRootViewController:_baseView];
+    self.window.rootViewController = baseNav;
     [self.window makeKeyAndVisible];
     return YES;
 }

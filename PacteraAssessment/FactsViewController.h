@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FactsDataManager.h"
 
-@interface FactsViewController : UIViewController
+@interface FactsViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate,FactsImageDownloadDelegate, FactsDataDelegate>
 
-@property (nonatomic, retain) UITableView *factList;
+@property (nonatomic, retain) UITableView *factListTable;
+@property (nonatomic, retain) NSArray *factList;
 
 
 @end
