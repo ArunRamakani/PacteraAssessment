@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC640CFA1A430F0F00E4241A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640CF91A430F0F00E4241A /* main.m */; };
-		DC640CFD1A430F0F00E4241A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640CFC1A430F0F00E4241A /* AppDelegate.m */; };
-		DC640D001A430F0F00E4241A /* FactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640CFF1A430F0F00E4241A /* FactsViewController.m */; };
+		DC640CFA1A430F0F00E4241A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640CF91A430F0F00E4241A /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DC640CFD1A430F0F00E4241A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640CFC1A430F0F00E4241A /* AppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DC640D001A430F0F00E4241A /* FactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640CFF1A430F0F00E4241A /* FactsViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DC640D141A430F0F00E4241A /* PacteraAssessmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640D131A430F0F00E4241A /* PacteraAssessmentTests.m */; };
-		DC640D1F1A4317BE00E4241A /* FactsDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640D1E1A4317BE00E4241A /* FactsDataManager.m */; };
+		DC640D1F1A4317BE00E4241A /* FactsDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640D1E1A4317BE00E4241A /* FactsDataManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DC640D7C1A43185900E4241A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DC640D231A43185900E4241A /* .gitignore */; };
 		DC640D7D1A43185900E4241A /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = DC640D241A43185900E4241A /* .travis.yml */; };
 		DC640D7E1A43185900E4241A /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DC640D251A43185900E4241A /* Config.xcconfig */; };
@@ -21,10 +21,10 @@
 		DC640D821A43185900E4241A /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640D2C1A43185900E4241A /* CJSONSerializer.m */; };
 		DC640D831A43185900E4241A /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640D2F1A43185900E4241A /* NSDictionary_JSONExtensions.m */; };
 		DC640DD01A43198B00E4241A /* Facts.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC640DCF1A43198B00E4241A /* Facts.txt */; };
-		DC640DD31A435B4400E4241A /* Facts.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640DD21A435B4400E4241A /* Facts.m */; };
-		DC640DD61A43E74B00E4241A /* FactsDisplayCellCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640DD51A43E74B00E4241A /* FactsDisplayCellCell.m */; };
+		DC640DD31A435B4400E4241A /* Facts.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640DD21A435B4400E4241A /* Facts.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DC640DD61A43E74B00E4241A /* FactsDisplayCellCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC640DD51A43E74B00E4241A /* FactsDisplayCellCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DC640DD91A446E6500E4241A /* default-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DC640DD81A446E6500E4241A /* default-placeholder.png */; };
-		DC640DDB1A446F6000E4241A /* latest.png in Resources */ = {isa = PBXBuildFile; fileRef = DC640DDA1A446F6000E4241A /* latest.png */; };
+		DC640DDB1A446F6000E4241A /* noImage.png in Resources */ = {isa = PBXBuildFile; fileRef = DC640DDA1A446F6000E4241A /* noImage.png */; };
 		DC640DDD1A4470C900E4241A /* atdJL.png in Resources */ = {isa = PBXBuildFile; fileRef = DC640DDC1A4470C900E4241A /* atdJL.png */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +69,7 @@
 		DC640DD41A43E74B00E4241A /* FactsDisplayCellCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactsDisplayCellCell.h; sourceTree = "<group>"; };
 		DC640DD51A43E74B00E4241A /* FactsDisplayCellCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactsDisplayCellCell.m; sourceTree = "<group>"; };
 		DC640DD81A446E6500E4241A /* default-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-placeholder.png"; sourceTree = "<group>"; };
-		DC640DDA1A446F6000E4241A /* latest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = latest.png; sourceTree = "<group>"; };
+		DC640DDA1A446F6000E4241A /* noImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noImage.png; sourceTree = "<group>"; };
 		DC640DDC1A4470C900E4241A /* atdJL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = atdJL.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,11 +120,11 @@
 				DC640CFF1A430F0F00E4241A /* FactsViewController.m */,
 				DC640D1D1A4317BE00E4241A /* FactsDataManager.h */,
 				DC640D1E1A4317BE00E4241A /* FactsDataManager.m */,
-				DC640CF71A430F0F00E4241A /* Supporting Files */,
 				DC640DD11A435B4400E4241A /* Facts.h */,
 				DC640DD21A435B4400E4241A /* Facts.m */,
 				DC640DD41A43E74B00E4241A /* FactsDisplayCellCell.h */,
 				DC640DD51A43E74B00E4241A /* FactsDisplayCellCell.m */,
+				DC640CF71A430F0F00E4241A /* Supporting Files */,
 			);
 			path = PacteraAssessment;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				DC640DDC1A4470C900E4241A /* atdJL.png */,
-				DC640DDA1A446F6000E4241A /* latest.png */,
+				DC640DDA1A446F6000E4241A /* noImage.png */,
 				DC640DD81A446E6500E4241A /* default-placeholder.png */,
 			);
 			path = image;
@@ -288,7 +288,7 @@
 				DC640DD91A446E6500E4241A /* default-placeholder.png in Resources */,
 				DC640D7F1A43185900E4241A /* LICENSE in Resources */,
 				DC640D7C1A43185900E4241A /* .gitignore in Resources */,
-				DC640DDB1A446F6000E4241A /* latest.png in Resources */,
+				DC640DDB1A446F6000E4241A /* noImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -407,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -491,6 +491,7 @@
 				DC640D191A430F0F00E4241A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC640D1A1A430F0F00E4241A /* Build configuration list for PBXNativeTarget "PacteraAssessmentTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +500,7 @@
 				DC640D1C1A430F0F00E4241A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

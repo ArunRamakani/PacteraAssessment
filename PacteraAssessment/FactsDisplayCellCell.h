@@ -12,11 +12,11 @@
 @interface FactsDisplayCellCell : UITableViewCell{
 
 }
-@property(nonatomic,retain)UILabel *primaryLabel;
-@property(nonatomic,retain)UILabel *secondaryLabel;
-@property(nonatomic,retain)UIImageView *myImageView;
-@property(nonatomic,retain)UIImageView *cellDivider;
-@property(nonatomic,retain)UIImageView *imgAccessoryvw;
+@property(nonatomic,retain) UILabel     *primaryLabel;
+@property(nonatomic,retain) UILabel     *secondaryLabel;
+@property(nonatomic,retain) UIImageView *factImage;
+@property(nonatomic,retain) UIImageView *cellDivider;
+@property(nonatomic,retain) UIImageView *cellAccesserImage;
 
 @end
 

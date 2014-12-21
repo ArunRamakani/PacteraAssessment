@@ -2,6 +2,8 @@
 //  AppDelegate.m
 //  PacteraAssessment
 //
+//  This call is responsible for handling application life cycle event. This class also prepares the window for first lanch
+//
 //  Created by Arun Ramakani on 12/18/14.
 //  Copyright (c) 2014 Pactera. All rights reserved.
 //
@@ -14,18 +16,32 @@
 
 @implementation AppDelegate
 
+- (void) dealloc {
+    
+    // release retained property
+    [_applicationBasewindow     release];
+    [_baseFactListController    release];
+    [_applicationBaseNavigation release];
+    
+    _applicationBasewindow      = nil;
+    _baseFactListController     = nil;
+    _applicationBaseNavigation  = nil;
+    
+    [super dealloc];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    // Initialize application base window , navigation and Facts view
+    _applicationBasewindow      = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
+    _baseFactListController     = [[FactsViewController alloc] init];
+    _applicationBaseNavigation  = [[UINavigationController alloc] initWithRootViewController:_baseFactListController];
 
-    [self.window setBackgroundColor:[UIColor whiteColor]];
+    // Setup base window for application lanch
+    [_applicationBasewindow setBackgroundColor:[UIColor whiteColor]];
+    _applicationBasewindow.rootViewController = _applicationBaseNavigation;
+    [_applicationBasewindow makeKeyAndVisible];
     
-    _baseView = [[FactsViewController alloc] init];
-    
-    UINavigationController *baseNav = [[UINavigationController alloc] initWithRootViewController:_baseView];
-    self.window.rootViewController = baseNav;
-    [self.window makeKeyAndVisible];
     return YES;
 }
 

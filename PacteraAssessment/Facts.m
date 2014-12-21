@@ -10,5 +10,20 @@
 
 @implementation Facts
 
+-(void) dealloc {
+    
+    // release retained property
+    [_factTitle release];
+    [_factDiscription release];
+    [_factImageLink release];
+    [_factImage release];
+    
+    _factTitle          = nil;
+    _factDiscription    = nil;
+    _factImageLink      = nil;
+    _factImage          = nil;
+    
+    [super dealloc];
+}
 
 @end
