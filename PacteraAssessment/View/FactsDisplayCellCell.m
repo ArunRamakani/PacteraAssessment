@@ -15,16 +15,16 @@
 -(void) dealloc {
     
     // release retained property
-    [_primaryLabel release];
-    [_secondaryLabel release];
+    [_factTitleLabel release];
+    [_factDiscriptionLabel release];
     [_factImage release];
     [_cellDivider release];
     [_cellAccesserImage release];
     
-    _primaryLabel       = nil;
-    _secondaryLabel     = nil;
-    _cellDivider        = nil;
-    _cellAccesserImage  = nil;
+    _factTitleLabel         = nil;
+    _factDiscriptionLabel   = nil;
+    _cellDivider            = nil;
+    _cellAccesserImage      = nil;
     
     [super dealloc];
 }
@@ -41,30 +41,31 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
         // setup primary label for fact title display
-        _primaryLabel               = [[UILabel alloc] initWithFrame:CGRectMake(10, 5, 300, 20)];
-        _primaryLabel.font          = [UIFont systemFontOfSize:16];
-        _primaryLabel.textAlignment = NSTextAlignmentLeft;
-        [_primaryLabel setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
-        [self.contentView addSubview:_primaryLabel];
+        _factTitleLabel                   = [[UILabel alloc] initWithFrame:CGRectMake(10, 5, self.contentView.frame.size.width - 80, 50)];
+        _factTitleLabel.font              = [UIFont systemFontOfSize:16];
+        _factTitleLabel.lineBreakMode     = NSLineBreakByWordWrapping;
+        _factTitleLabel.numberOfLines     = 0;
+        _factTitleLabel.textAlignment     = NSTextAlignmentLeft;
+        [_factTitleLabel setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
+        [self.contentView addSubview:_factTitleLabel];
         
         // setup secondary lable for fact discription dispaly
-        _secondaryLabel                 = [[UILabel alloc] initWithFrame:CGRectMake(10, 25, 200, 50)];
-        _secondaryLabel.textAlignment   = NSTextAlignmentLeft;
-        _secondaryLabel.lineBreakMode   = NSLineBreakByWordWrapping;
-        _secondaryLabel.numberOfLines   = 0;
-        _secondaryLabel.font            = [UIFont systemFontOfSize:10];
-        [_secondaryLabel setAutoresizingMask:UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleWidth];
-        [self.contentView addSubview:_secondaryLabel];
+        _factDiscriptionLabel                 = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, self.contentView.frame.size.width - 80, 50)];
+        _factDiscriptionLabel.textAlignment   = NSTextAlignmentLeft;
+        _factDiscriptionLabel.lineBreakMode   = NSLineBreakByWordWrapping;
+        _factDiscriptionLabel.numberOfLines   = 0;
+        _factDiscriptionLabel.font            = [UIFont systemFontOfSize:10];
+        [_factDiscriptionLabel setAutoresizingMask:UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleWidth];
+        [self.contentView addSubview:_factDiscriptionLabel];
         
         // setup fact image
-        _factImage = [[UIImageView alloc] initWithFrame:CGRectMake(220, 10, 70, 70)];
+        _factImage = [[UIImageView alloc] initWithFrame:CGRectMake(self.contentView.frame.size.width - 70, 20, 50, 50)];
         [_factImage setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin];
         [self.contentView addSubview:_factImage];
         
         // setup cell divider
-        _cellDivider                    = [[UIImageView alloc] initWithFrame:CGRectMake(0, 89, 340, 1)];
+        _cellDivider                    = [[UIImageView alloc] initWithFrame:CGRectMake(0, 65, 340, 1)];
         _cellDivider.backgroundColor    = [UIColor grayColor];
-        [_cellDivider setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
         [self.contentView addSubview:_cellDivider];
         
         //setup cell accesser iamge
@@ -76,11 +77,6 @@
     
     return self;
 }
-
-
-
-
-
 
 
 @end

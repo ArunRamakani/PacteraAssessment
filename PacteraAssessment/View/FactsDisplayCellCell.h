@@ -12,8 +12,8 @@
 @interface FactsDisplayCellCell : UITableViewCell{
 
 }
-@property(nonatomic,retain) UILabel     *primaryLabel;
-@property(nonatomic,retain) UILabel     *secondaryLabel;
+@property(nonatomic,retain) UILabel     *factTitleLabel;
+@property(nonatomic,retain) UILabel     *factDiscriptionLabel;
 @property(nonatomic,retain) UIImageView *factImage;
 @property(nonatomic,retain) UIImageView *cellDivider;
 @property(nonatomic,retain) UIImageView *cellAccesserImage;

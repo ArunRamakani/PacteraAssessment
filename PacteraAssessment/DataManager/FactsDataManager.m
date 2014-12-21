@@ -2,6 +2,8 @@
 //  FactsDataManager.m
 //  PacteraAssessment
 //
+//  Helper class that manages data download and parsing for Facts list display
+//
 //  Created by Arun Ramakani on 12/18/14.
 //  Copyright (c) 2014 Pactera. All rights reserved.
 //
@@ -55,7 +57,7 @@
     [_downloadedData retain];
     
     // Create image download request and fire network request
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:_factForImageDownload.factImageLink]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:_factForImageDownload.factImageLink] cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:20];
     _downloadConn         = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     
 }
@@ -95,7 +97,7 @@
     [_downloadedData retain];
     
     // Create fact list download request and fire network request
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dl.dropboxusercontent.com/u/746330/facts.json"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dl.dropboxusercontent.com/u/746330/facts.json"] cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:20];
     _downloadConn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
 
 }
@@ -120,9 +122,9 @@
     // handle parse error
     if(error){
         [_factsDownloadDelegate factDownloadCompleted:nil factsTitle:nil];
-        NSLog(@"Error : %@", error.userInfo);
+        //NSLog(@"Error : %@", error.userInfo);
     } else {
-        NSLog(@"myString : %@", myString);
+        //NSLog(@"myString : %@", myString);
         
         NSArray *rows   = [dictionary  valueForKey:@"rows"];
         NSString *title = [dictionary  valueForKey:@"title"];
@@ -135,7 +137,7 @@
                 if (![[row  valueForKey:@"description"] isKindOfClass:[NSNull class]]) {
                     fact.factDiscription = [row  valueForKey:@"description"];
                 } else {
-                    fact.factDiscription = @"No discription Available";
+                    fact.factDiscription = @"No discription available";
                 }
                 if (![[row  valueForKey:@"imageHref"] isKindOfClass:[NSNull class]]) {
                     fact.factImageLink = [row  valueForKey:@"imageHref"];
@@ -175,14 +177,14 @@
 {
     // redirect call based on data download failure type (Fact list/Fact image)
     if(_factsDownloadDelegate != nil){
-        [_factsDownloadDelegate factDownloadCompleted:nil factsTitle:nil];
+        [_factsDownloadDelegate factDownloadCompleted:nil factsTitle:error.localizedDescription];
     } else {
         // Set no image place holder
         _factForImageDownload.factImage = [UIImage imageNamed:@"noImage.png"];
         [_imageDownloadDelegate factImageDownloadCompleted:_factForImageDownload imageIndexPath:_imageIndexPath];
     }
     
-    NSLog(@"Error : %@", error.userInfo);
+    //NSLog(@"Error : %@", error.userInfo);
 }
 
 //--------------------------------------------------------------------------------------------------

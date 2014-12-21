@@ -26,6 +26,8 @@
 
 @implementation FactsViewController
 
+#pragma mark - View life cycle
+
 -(void) dealloc {
     
     // release retained property
@@ -34,6 +36,7 @@
     
     _factImageDownLoadTracker = nil;
     _factList                 = nil;
+    
     [super dealloc];
     
 }
@@ -86,6 +89,17 @@
     }
     [_factImageDownLoadTracker removeAllObjects];
     
+}
+
+- (BOOL)shouldAutorotate:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+
+-(NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 #pragma mark - Facts List Download
@@ -158,15 +172,19 @@
         // Refresh table and update refresh control status
         [self.tableView reloadData];
         self.title = factTitle;
-        [self.refreshControl endRefreshing];
-        self.navigationItem.rightBarButtonItem.enabled = true;
-        self.refreshControl.attributedTitle = [[[NSAttributedString alloc] initWithString:PULL_MESSAGE] autorelease];
-        
+    } else if (facts == nil){
+        // show error aleart on fact list down load failure
+        NSLog(@"Fact list download error :: %@",factTitle);
     }
+    
+    //revert pull to refresh state
+    [self.refreshControl endRefreshing];
+    self.navigationItem.rightBarButtonItem.enabled = true;
+    self.refreshControl.attributedTitle = [[[NSAttributedString alloc] initWithString:PULL_MESSAGE] autorelease];
     
 }
 
-#pragma mark - UITableViewDataSource
+#pragma mark - UITableView Data Source
 //--------------------------------------------------------------------------------------------------
 //	Function Name	:	tableView: numberOfRowsInSection
 //	Description		:	returns the number of Rows in respective sections
@@ -189,12 +207,22 @@
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
-//    Facts *factRow = [_factList objectAtIndex:indexPath.row];
-//    CGSize sizeTitle = [factRow.factTitle sizeWithFont:= UIFont.SystemFontOfSize(16)
-//                                     constrainedToSize:CGSizeMake(,)
-//                                    lineBreakMode:NSLineBreakByWordWrapping];
+    // calculate dynamic label size
+    Facts *factRow          = [_factList objectAtIndex:indexPath.row];
+    CGSize constrainSize    = CGSizeMake(self.view.frame.size.width - 90, 150);
+    CGSize sizeTitle        = [factRow.factTitle sizeWithFont:[UIFont systemFontOfSize:16]
+                                     constrainedToSize:constrainSize
+                                    lineBreakMode:NSLineBreakByWordWrapping];
+    CGSize sizeDiscription  = [factRow.factDiscription sizeWithFont:[UIFont systemFontOfSize:10]
+                                     constrainedToSize:constrainSize
+                                         lineBreakMode:NSLineBreakByWordWrapping];
+    
+    // store calculated heights in fact reference
+    factRow.factTitleLabelHeight        = sizeTitle.height;
+    factRow.factDiscriptionLabelHeight  = sizeDiscription.height;
+    factRow.factCellHeight              = (sizeTitle.height + sizeDiscription.height + 22) > 66 ? (sizeTitle.height + sizeDiscription.height + 22) : 66;
 
-    return 90;
+    return factRow.factCellHeight;
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -217,8 +245,8 @@
     // Set up data for current fact row
     Facts *factRow = [_factList objectAtIndex:indexPath.row];
     
-    cell.primaryLabel.text      = factRow.factTitle;
-    cell.secondaryLabel.text    = factRow.factDiscription;
+    cell.factTitleLabel.text            = factRow.factTitle;
+    cell.factDiscriptionLabel.text      = factRow.factDiscription;
     
     // setup cell image if availabel else provide a place holder image or no image
     if(factRow.factImageLink == nil){
@@ -234,6 +262,12 @@
             cell.factImage.image = factRow.factImage;
         }
     }
+    
+    // set update frame for cell subviewes based on content size
+    cell.factTitleLabel.frame       = CGRectMake(10, 6, cell.contentView.frame.size.width - 90, factRow.factTitleLabelHeight);
+    cell.factDiscriptionLabel.frame = CGRectMake(10, factRow.factTitleLabelHeight + 9, cell.contentView.frame.size.width - 90, factRow.factDiscriptionLabelHeight);
+    cell.factImage.frame            = CGRectMake(cell.contentView.frame.size.width - 70, factRow.factCellHeight/2 -25 , 50, 50);
+    cell.cellDivider.frame          = CGRectMake(0, factRow.factCellHeight -1 , self.view.frame.size.width, 1);
     
     return cell;
 }
